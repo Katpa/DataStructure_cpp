@@ -2,30 +2,22 @@
 #include <string>
 //#include <queue>
 #include "DataStructures/Queue.h"
+#include "DataStructures/List.h"
 
 using namespace std;
 
 int main()
 {
-	queue<int> q;
+	List<int> list;
 
-	int i = 1;
-	q.push(i++);
-	q.push(i++);
-	q.push(i++);
-	q.push(i++);
+	list.Insert(5);
+	list.Insert(1);
+	list.Insert(2);
+	list.Insert(1, 3);
 
-	cout << q.front() << endl;
-	cout << q.back() << endl;
+	list.Remove(2);
 
-	q.pop();
-
-	cout << q.front() << endl;
-
-	if (!q.empty())
-		q.push(i++);
-
-	cout << q.size() << endl;
+	//cout << list.Size() << endl;
 
 	return EXIT_SUCCESS;
 }
