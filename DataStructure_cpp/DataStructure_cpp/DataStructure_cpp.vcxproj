@@ -130,6 +130,7 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="DataStructures\HashMap.h" />
     <ClInclude Include="DataStructures\List.h" />
     <ClInclude Include="DataStructures\Queue.h" />
   </ItemGroup>
