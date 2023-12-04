@@ -29,5 +29,8 @@
     <ClInclude Include="DataStructures\HashMap.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="DataStructures\PriorityQueue.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

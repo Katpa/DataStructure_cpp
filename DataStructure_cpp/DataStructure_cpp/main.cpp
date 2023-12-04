@@ -4,15 +4,24 @@
 #include "DataStructures/Queue.h"
 #include "DataStructures/List.h"
 #include "DataStructures/HashMap.h"
+#include "DataStructures/PriorityQueue.h"
 
 using namespace std;
 
 int main()
 {
-	HashMap<string, int> hashMap;
+	PriorityQueue<int> pq;
 
-	hashMap.Insert("AA", 213);
-	hashMap.Insert("AB", 15);
+	pq.Push(3);
+	pq.Push(5);
+	pq.Push(2);
+
+	cout << pq.Top() << endl;
+
+	pq.SwitchSortType();
+	pq.Pop();
+
+	cout << pq.Top() << endl;
 
 	return EXIT_SUCCESS;
 }
